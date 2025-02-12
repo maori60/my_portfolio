@@ -78,10 +78,5 @@ footer {
     padding: 10px;
     font-size: 16px;
     border-radius: 8px;
-    cursor: pointer;
-}
-
-#language-select:hover {
-    background: #00ffea;
-    box-shadow: 0 0 10px #00ffea;
+    cur
 }
