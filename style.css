@@ -37,9 +37,20 @@ section {
 
 /* 📷 Photo et Texte alignés */
 .about-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    background: rgba(25, 25, 25, 0.9);
+    border-radius: 12px; 
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.2);
+    text-align: left;
+}
+
+/* 🔹 Conteneur pour l'image et le texte */
+.about-wrapper {
     display: flex;
     align-items: flex-start;
-    gap: 30px;
+    gap: 20px;
 }
 
 /* 📷 Image de profil */
