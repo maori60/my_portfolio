@@ -1,0 +1,28 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const text = "Développeur | Étudiant à 42 | Passionné de Tech";
+    let index = 0;
+    const speed = 100;
+    const target = document.getElementById("typing-text");
+
+    function typeWriter() {
+        if (index < text.length) {
+            target.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+    typeWriter();
+});
+
+// 🌍 Gestion des langues
+const translations = {
+    fr: document.getElementById("about-content").innerHTML,
+    en: "<h2>A journey between two cultures, a quest for innovation</h2> <p>I was born in Ho Chi Minh...</p>",
+    vi: "<h2>Một hành trình giữa hai nền văn hóa, một nhiệm vụ đổi mới</h2> <p>Tôi sinh ra tại Thành phố Hồ Chí Minh...</p>",
+    th: "<h2>การเดินทางระหว่างสองวัฒนธรรม ภารกิจแห่งนวัตกรรม</h2> <p>ฉันเกิดที่โฮจิมินห์...</p>"
+};
+
+document.getElementById("language-select").addEventListener("change", function () {
+    const lang = this.value;
+    document.getElementById("about-content").innerHTML = translations[lang];
+});

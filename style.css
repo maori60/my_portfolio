@@ -1,0 +1,83 @@
+/* 🌌 Design sombre et épuré */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    background-image: url('images/galaxy.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+/* 🏆 Header */
+header {
+    padding: 100px 20px 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #64ffda;
+    text-shadow: 0 0 15px #00ffea;
+}
+
+/* 📌 Sections */
+section {
+    margin: 80px auto;
+    padding: 40px;
+    width: 80%;
+    max-width: 1000px;
+    background: rgba(25, 25, 25, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.2);
+    text-align: left;
+}
+
+/* 📷 Photo bien alignée */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.5);
+}
+
+/* 📌 Footer */
+footer {
+    background: rgba(10, 10, 10, 0.9);
+    padding: 20px;
+    color: #64ffda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* 🎛️ Sélecteur de langue */
+.footer-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#language-select {
+    background: #64ffda;
+    border: 2px solid #00ffea;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#language-select:hover {
+    background: #00ffea;
+    box-shadow: 0 0 10px #00ffea;
+}
