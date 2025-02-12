@@ -8,7 +8,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     color: #e0e0e0;
-    text-align: center;
 }
 
 /* 🔹 Fond de particules */
@@ -24,6 +23,7 @@ body {
 /* 🏆 Header */
 header {
     padding: 100px 20px 50px;
+    text-align: center; /* Seul le titre est centré */
 }
 
 h1 {
@@ -41,16 +41,28 @@ section {
     background: rgba(25, 25, 25, 0.9);
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(100, 255, 218, 0.2);
-    text-align: left;
+    text-align: left; /* Correction pour éviter le centrage du texte */
 }
 
-/* 📷 Photo */
+/* 📷 Section Présentation (Photo + Texte) */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* 📷 Photo de profil */
 .profile-img {
     width: 140px;
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 0 15px rgba(100, 255, 218, 0.5);
+}
+
+/* 📝 Texte de présentation */
+.about-text {
+    flex: 1; /* Le texte prend le reste de la largeur disponible */
 }
 
 /* 📌 Footer */
@@ -78,5 +90,10 @@ footer {
     padding: 10px;
     font-size: 16px;
     border-radius: 8px;
-    cur
+    cursor: pointer;
+}
+
+#language-select:hover {
+    background: #00ffea;
+    box-shadow: 0 0 10px #00ffea;
 }
