@@ -9,8 +9,37 @@ body {
     background-attachment: fixed;
     color: #e0e0e0;
 }
+/* 🌌 Design sombre et épuré
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    background-image: url('images/galaxy.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #e0e0e0;
+} */
 
-/* UL test */
+/* 📌 Navigation */
+nav {
+    background: rgba(10, 10, 10, 0.9);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
 nav ul li {
     margin: 0 20px;
 }
@@ -26,19 +55,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #00ffea;
     text-shadow: 0 0 8px #00ffea;
-}
-
-/* 🏆 Header */
-header {
-    padding: 100px 20px;
-    text-align: center; /* Centrer le titre */
-}
-
-h1 {
-    font-size: 2.5rem;
-    color: #64ffda;
-    text-shadow: 0 0 15px #00ffea;
-    margin-bottom: 40px; /* Espacement sous le titre */
 }
 
 /* 📌 Sections */
