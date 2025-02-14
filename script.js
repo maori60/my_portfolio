@@ -1,17 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Récupérer le compteur de visites stocké localement
-    let visitCount = localStorage.getItem("visitCount");
+    const counterElement = document.getElementById("visit-counter");
 
-    // Si c'est la première visite, initialiser à 1
-    if (!visitCount) {
-        visitCount = 1;
-    } else {
-        visitCount = parseInt(visitCount) + 1;
+    // Vérifier si l'élément existe (évite les erreurs sur d'autres pages)
+    if (counterElement) {
+        fetch("https://api.countapi.xyz/hit/maori60-portfolio/visites")
+            .then(response => response.json())
+            .then(data => {
+                counterElement.innerText = `👁️ Nombre de visites : ${data.value}`;
+            })
+            .catch(error => {
+                console.error("Erreur avec CountAPI :", error);
+                counterElement.innerText = "🚨 Erreur de compteur";
+            });
     }
-
-    // Mettre à jour le stockage local
-    localStorage.setItem("visitCount", visitCount);
-
-    // Afficher le compteur sur la page
-    document.getElementById("visit-counter").innerText = `👁️ Nombre de visites : ${visitCount}`;
 });
