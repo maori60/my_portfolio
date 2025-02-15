@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Mistral</title>
+    <link rel="stylesheet" href="style_chat.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="chat_mistral.html">Chat Mistral</a></li>
+                <li><a href="projects.html" id="nav-projects">Projets en C</a></li>
+                <li><a href="projects_ia.html" id="nav-projects_ia">Projets IA</a></li>
+                <li><a href="projects_python.html" id="nav-projects_python">Projets PYTHON</a></li>
+                <!-- <li><a href="chat_mistral.html" id="nav-projects_chat_mistral">Projets Chat avec Mistral</a></li> -->
+                <li><a href="index.html#about" id="nav-about">À propos</a></li>
+                <li><a href="index.html#contact" id="nav-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="chat-container">
+        <h1>💬 Chat avec Mistral AI</h1>
+        <div id="chat-box"></div>
+        <input type="text" id="chat-input" placeholder="Écris ton message..." />
+        <button id="chat-button">Envoyer</button>
+    </section>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
